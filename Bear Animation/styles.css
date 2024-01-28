@@ -1,0 +1,132 @@
+:root {
+  --bear: #d38d6a;
+  --bear-light: #f2dec5;
+  --background: teal;
+  --circle: #fff;
+}
+body {
+  background-color: var(--background);
+}
+.container {
+  width: 300px;
+  height: 300px;
+  border-radius: 50% 50% 45% 45%;
+  background: var(--circle);
+  position: relative;
+  margin: 0 auto;
+}
+.left-ear,
+.right-ear,
+.inner-left,
+.inner-right,
+.head,
+.left-eye,
+.right-eye,
+.snout,
+.nose,
+.left-smile,
+.right-smile,
+.dot {
+  position: absolute;
+}
+
+.left-ear,
+.right-ear,
+.inner-left,
+.inner-right,
+.left-eye,
+.right-eye,
+.left-smile,
+.right-smile {
+  border-radius: 50%;
+}
+.left-ear,
+.right-ear {
+  width: 80px;
+  height: 80px;
+  background: var(--bear);
+  top: 80px;
+}
+.inner-left,
+.inner-right {
+  width: 50px;
+  height: 50px;
+  background: var(--bear-light);
+  margin: 15px;
+}
+.left-ear {
+  left: 30px;
+  animation: move 5s infinite;
+}
+.right-ear {
+  right: 30px;
+}
+.head {
+  width: 210px;
+  height: 210px;
+  border-radius: 50% 50% 40% 40%;
+  background: var(--bear);
+  top: 90px;
+  left: 45px;
+}
+.left-eye,
+.right-eye {
+  width: 20px;
+  height: 20px;
+  background: #000;
+  top: 80px;
+  animation: blink 3s infinite;
+}
+.left-eye {
+  left: 60px;
+}
+.right-eye {
+  right: 70px;
+}
+.snout {
+  width: 100px;
+  height: 60px;
+  background: var(--bear-light);
+  border-radius: 50% 50% 40% 40%;
+  top: 100px;
+  left: 50px;
+  animation: sniff 4s infinite;
+}
+.nose {
+  width: 35px;
+  height: 20px;
+  background: #000;
+  border-radius: 40% 40% 60% 60%;
+  top: 10px;
+  left: 32px;
+  animation: sniff 4s infinite;
+}
+.left-smile,
+.right-smile {
+  width: 35px;
+  height: 35px;
+  top: 6px;
+}
+.left-smile {
+  left: 12px;
+  box-shadow: 5px 3px #000;
+}
+.right-smile {
+  right: 12px;
+  box-shadow: -5px 3px #000;
+}
+@keyframes blink {
+  50% {
+    scale: 1 0.1;
+  }
+}
+@keyframes sniff {
+  50% {
+    transform: translateX(3px);
+  }
+}
+@keyframes move {
+  50% {
+    transform: translateY(3px);
+  }
+}
