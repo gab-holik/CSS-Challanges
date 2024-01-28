@@ -6,6 +6,9 @@
 }
 body {
   background-color: var(--background);
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 .container {
   width: 300px;
@@ -125,8 +128,23 @@ body {
     transform: translateX(3px);
   }
 }
-@keyframes move {
+@keyframes move1 {
+  0% {
+    top: 80px;
+    left: 30px;
+  }
   50% {
-    transform: translateY(3px);
+    top: 83px;
+    left: 27px;
+  }
+}
+@keyframes move2 {
+  0% {
+    top: 80px;
+    right: 30px;
+  }
+  50% {
+    top: 83px;
+    right: 27px;
   }
 }
