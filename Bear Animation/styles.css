@@ -78,7 +78,7 @@ body {
   height: 20px;
   background: #000;
   top: 80px;
-  animation: blink 3s infinite;
+  animation: blink 2s infinite;
 }
 .left-eye {
   left: 60px;
